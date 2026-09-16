@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as mx;
+
+// 1. Raw Sass Color Variables
+$color-black: #000000;
+$color-primary: #315B88;
+$color-secondary-bg: #496E96;
+$color-secondary: #F7F4EE;
+$color-background: #FFFDFA;
+$color-white: #FFFFFF;
+
+// 2. Generate the CSS Custom Properties in :root
+:root {
+  // Core Palette
+  @include mx.define-lch($color-black, --color-black);
+  @include mx.define-lch($color-primary, --color-primary);
+  @include mx.define-lch($color-secondary-bg, --color-secondary-bg);
+  @include mx.define-lch($color-secondary, --color-secondary);
+  @include mx.define-lch($color-background, --color-bg);
+  @include mx.define-lch($color-white, --color-white);
+
+  // 3. Bonus: Generate Automatic Hover/Active States!
+  // Darken the primary color slightly for button hovers
+  @include mx.define-adjusted-lch($color-primary, --color-primary-hover, -10);
+  
+  // Lighten the secondary background slightly for interactive cards
+  @include mx.define-adjusted-lch($color-secondary-bg, --color-secondary-bg-hover, 10);
+}

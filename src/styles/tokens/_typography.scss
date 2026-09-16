@@ -1,0 +1,42 @@
+
+$font-sans: 'Manrope', sans-serif;
+
+$weight-extralight: 200;
+$weight-light: 300; // Base weight
+$weight-regular: 400;
+$weight-medium: 500;
+
+:root {
+  --font-primary: #{$font-sans};
+  --font-weight-base: #{$weight-light};
+
+  // Mobile Font Sizes (Default)
+  --fs-xs: 1rem;       // 16px
+  --fs-sm: 1.125rem;   // 18px
+  --fs-base: 1.25rem;  // 20px
+  --fs-lg: 2rem;       // 32px
+  --fs-xl: 2.375rem;   // 38px
+  --fs-xxl: 3.25rem;   // 52px
+
+  // Desktop Font Sizes (Media Query)
+  @media (min-width: 768px) {
+    --fs-xs: 1rem;       // 16px (Stays the same)
+    
+    // Notice how these map to your "DESKTOP" design block
+    --fs-base: 1.25rem;  // 20px (Stays the same)
+    --fs-lg: 2rem;       // 32px (Stays the same)
+    
+    // The big jumps happen here
+    --fs-xxl: 5rem;      // Jumps from 52px to 80px!
+  }
+}
+
+// ==========================================
+// UTILITY CLASSES
+// ==========================================
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-base);
+  font-size: var(--fs-base); // Sets the 20px default
+  -webkit-font-smoothing: antialiased;
+}
