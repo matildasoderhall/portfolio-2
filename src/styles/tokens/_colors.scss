@@ -23,5 +23,5 @@ $color-white: #FFFFFF;
   @include mx.define-adjusted-lch($color-primary, --color-primary-hover, -10);
   
   // Lighten the secondary background slightly for interactive cards
-  @include mx.define-adjusted-lch($color-secondary-bg, --color-secondary-bg-hover, 10);
+  @include mx.define-adjusted-lch($color-background, --color-bg-light, 51);
 }

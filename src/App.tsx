@@ -3,11 +3,12 @@ import '@fontsource/manrope/300.css'; // Light (Your base)
 import '@fontsource/manrope/400.css'; // Regular
 import '@fontsource/manrope/500.css'; // Medium
 import '@styles/globals.scss';
+import { HeroSection } from './sections/HeroSection';
 
 function App() {
   return (
     <>
-      <div>Portfolio</div>
+      <HeroSection />
     </>
   );
 }

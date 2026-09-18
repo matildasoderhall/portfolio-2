@@ -10,6 +10,11 @@ $weight-medium: 500;
   --font-primary: #{$font-sans};
   --font-weight-base: #{$weight-light};
 
+  --fw-extralight: #{$weight-extralight};
+  --fw-light: #{$weight-light};
+  --fw-regular: #{$weight-regular};
+  --fw-medium: #{$weight-medium};
+
   // Mobile Font Sizes (Default)
   --fs-xs: 1rem;       // 16px
   --fs-sm: 1.125rem;   // 18px
@@ -18,16 +23,20 @@ $weight-medium: 500;
   --fs-xl: 2.375rem;   // 38px
   --fs-xxl: 3.25rem;   // 52px
 
-  // Desktop Font Sizes (Media Query)
-  @media (min-width: 768px) {
-    --fs-xs: 1rem;       // 16px (Stays the same)
-    
-    // Notice how these map to your "DESKTOP" design block
+  // Tablet Font Sizes (Media Query)
+  @media (min-width: 48rem) {
+    --fs-xs: 1rem;
     --fs-base: 1.25rem;  // 20px (Stays the same)
     --fs-lg: 2rem;       // 32px (Stays the same)
-    
-    // The big jumps happen here
-    --fs-xxl: 5rem;      // Jumps from 52px to 80px!
+    --fs-xxl: 3.75rem;
+  }
+
+  // Desktop Font Sizes (Media Query)
+  @media (min-width: 80rem) {
+    --fs-xs: 1rem;
+    --fs-base: 1.25rem;  // 20px (Stays the same)
+    --fs-lg: 2rem;       // 32px (Stays the same)
+    --fs-xxl: 5rem;
   }
 }
 
@@ -39,4 +48,5 @@ body {
   font-weight: var(--font-weight-base);
   font-size: var(--fs-base); // Sets the 20px default
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.05em;
 }

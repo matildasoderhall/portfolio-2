@@ -1,3 +1,4 @@
+import { DecorativeLines } from '../components/DecorativeLines';
 import './HeroSection.scss';
 
 export const HeroSection = () => {
@@ -28,6 +29,7 @@ export const HeroSection = () => {
           </svg>
         </a>
       </div>
+
       <hgroup className="hero-section__header">
         <h1 className="hero-section__title">
           <span className="hero-section__name-first">Matilda</span>
@@ -35,15 +37,23 @@ export const HeroSection = () => {
         </h1>
         <p className="hero-section__subtitle">Front End Developer</p>
       </hgroup>
-      <p className="hero-section__intro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p className="hero-section__location">
-        Rooted in Gothenburg.
-        <br /> Working worldwide.
-      </p>
-      <div className='hero-section__footer'/>
+      <div className='hero-section__body'>
+        <p className="hero-section__intro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <p className="hero-section__location">
+          Rooted in Gothenburg.
+          <br /> Working worldwide.
+        </p>
+      </div>
+
+      <DecorativeLines
+        className='hero-section__decor'
+      />
+
+      <div className="hero-section__footer" />
     </section>
   );
 };
