@@ -1,0 +1,110 @@
+@use '@styles/abstracts/mixins' as *;
+
+.project-card {
+  font-size: var(--fs-xs);
+
+  @include mq(lg) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    max-width: 75.3rem;
+    align-items: flex-start;
+  }
+
+  &__img-container {
+    @include mq(lg) {
+      flex: 1;
+      width: 100%;
+      padding-top: 2.5rem;
+      aspect-ratio: 3/2;
+      padding-left: 5rem;
+    }
+  }
+
+  &__img {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-primary);
+    width: 100%;
+
+    @include mq(lg) {
+      padding-bottom: 0;
+      border-bottom: none;
+
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    @include mq(md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'title title' 'tech-stack description' 'links description';
+      column-gap: 1.5rem;
+    }
+
+    @include mq(lg) {
+      display: flex;
+      flex-direction: column;
+      max-width: 29rem;
+      padding-right: 5rem;
+      border-right: 1px solid var(--color-primary);
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &__title {
+    padding-block: 2.5rem;
+    grid-area: title;
+  }
+
+  &__company {
+    text-transform: uppercase;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-light);
+  }
+
+  &__role {
+    font-size: var(--fs-lg);
+  }
+
+  &__description {
+    padding-bottom: 1.5rem;
+    grid-area: description;
+
+    @include mq(lg) {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &__tech-stack {
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    list-style-type: none;
+    padding-left: 0;
+    grid-area: tech-stack;
+  }
+
+  &__tech-item {
+    padding: 0.4rem 0.5rem;
+
+    &:nth-child(odd) {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    &:nth-child(even) {
+      background-color: var(--color-secondary);
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    grid-area: links;
+    padding-top: 3.8rem;
+  }
+}
