@@ -1,24 +1,42 @@
 @use '@styles/abstracts/mixins' as *;
 
 .project-section {
+  padding-inline: 1.125rem;
+  padding-bottom: 5rem;
+
+  @include mq(md) {
+    padding-inline: 2.188rem;
+  }
+
+  @include mq(lg) {
+    padding-inline: 2.75rem;
+  }
+
   &__title {
     font-size: var(--fs-xxl);
     font-weight: var(--fw-light);
     line-height: 3.8rem;
     letter-spacing: 0.05em;
-    padding-inline: 1.125rem;
     padding-block: 5.3rem;
     width: min-content;
 
     @include mq(md) {
-      padding-inline: 2.188rem;
       padding-block: 4.9rem;
     }
 
     @include mq(lg) {
-      padding-inline: 2.75rem;
       padding-block: 6rem;
       line-height: 5.5rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+
+    @include mq(md) {
+      gap: 11rem;
     }
   }
 }
