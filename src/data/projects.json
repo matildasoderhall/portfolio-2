@@ -1,0 +1,62 @@
+[
+  {
+    "company": "Rum för dramatik",
+    "role": "Developer and designer",
+    "description": "A centralized digital platform for the drama magazine Rum för dramatik. Built as a Headless WordPress application with a React (Vite + TypeScript) frontend. Features include a digital archive, an Open Call submission system, and WCAG 2.1 AA accessibility.",
+    "techStack": [
+      "TypeScript",
+      "React",
+      "WordPress",
+      "Vite",
+      "SCSS",
+      "WCAG 2.1 AA"
+    ],
+    "linkGithub": "https://github.com/matildasoderhall/rumfordramatik",
+    "linkLive": "https://rumfordramatik.se/",
+    "mockImg": ""
+  },
+  {
+    "company": "Karlatornet Observation AB",
+    "role": "Developer and designer",
+    "description": "A centralized digital platform for the drama magazine Rum för dramatik. Built as a Headless WordPress application with a React (Vite + TypeScript) frontend. Features include a digital archive, an Open Call submission system, and WCAG 2.1 AA accessibility.",
+    "techStack": [
+      "TypeScript",
+      "Next.js",
+      "WordPress",
+      "Tailwind CSS",
+      "WCAG 2.1 AA"
+    ],
+    "linkGithub": "",
+    "linkLive": "",
+    "mockImg": ""
+  },
+  {
+    "company": "GMBL-Insight",
+    "role": "Frontend Developer",
+    "description": "A marketing and information website for GMBL-Insight, built with React, Vite, and TypeScript. Set up the project architecture from scratch and generated the site's watercolor illustrations using AI image tools. Delivered within three weeks alongside two classmates, adapting to incomplete UX deliverables after the UX interns departed mid-project.",
+    "techStack": [
+      "TypeScript",
+      "React",
+      "Vite",
+      "SCSS",
+      "WCAG 2.1 AA"
+    ],
+    "linkGithub": "",
+    "linkLive": "",
+    "mockImg": ""
+  },
+  {
+    "company": "Spelinsikt",
+    "role": "Frontend Developer",
+    "description": "A gambling addiction support app rebuilt from the ground up, taking ownership of architecture, design system, and documentation in a real client environment.",
+    "techStack": [
+      "TypeScript",
+      "React Native",
+      "Expo",
+      "Expo Router"
+    ],
+    "linkGithub": "",
+    "linkLive": "",
+    "mockImg": ""
+  }
+]
