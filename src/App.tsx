@@ -5,12 +5,14 @@ import '@fontsource/manrope/500.css'; // Medium
 import '@styles/globals.scss';
 import { HeroSection  } from './sections/HeroSection';
 import { ProjectSection } from './sections/ProjectSection';
+import { AboutSection } from './sections/AboutSection';
 
 function App() {
   return (
     <>
       <HeroSection />
       <ProjectSection />
+      <AboutSection />
     </>
   );
 }
