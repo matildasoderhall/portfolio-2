@@ -12,6 +12,11 @@
     padding-inline: 2.75rem;
   }
 
+  @include mq(xlg) {
+    margin-inline: auto;
+    max-width: 90rem;
+  }
+
   &__title {
     font-size: var(--fs-xxl);
     font-weight: var(--fw-light);
