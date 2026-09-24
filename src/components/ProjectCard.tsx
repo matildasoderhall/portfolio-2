@@ -20,17 +20,7 @@ export const ProjectCard = ({
   mockImg,
 }: ProjectCardProps) => {
   const placeholderImg = 'src/assets/images/projects/default.jpg';
-  console.log('ProjectCard props:', {
-    company,
-    role,
-    description,
-    techStack,
-    linkGithub,
-    linkLive,
-    mockImg,
-  });
 
-  console.log('Using placeholder image:', placeholderImg);
   return (
     <article className="project-card">
       <div className="project-card__img-container">
