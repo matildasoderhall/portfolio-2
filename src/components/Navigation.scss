@@ -20,7 +20,7 @@
   }
 
   @include mq(lg) {
-    padding: 2rem 3.125rem
+    padding: 2rem 3.125rem;
   }
   &.is-visible {
     opacity: 1;
@@ -133,9 +133,23 @@
     display: block;
     padding: 0.5rem 0;
 
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.3s ease;
+
+    &.is-active {
+      text-decoration-color: var(--color-black);
+      pointer-events: none;
+    }
     @include mq(md) {
       padding: 1rem 0.5rem;
-      /* Add your hover transitions here */
+    }
+
+    @include mq(lg) {
+      &:hover {
+        color: var(--color-primary);
+      }
     }
   }
 }
