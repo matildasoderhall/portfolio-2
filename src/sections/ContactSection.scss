@@ -16,7 +16,7 @@
     width: 85vw;
 
     @include mq(md) {
-        width: max-content;
+      width: max-content;
     }
   }
 
@@ -27,13 +27,13 @@
     align-self: flex-end;
 
     @include mq(md) {
-        font-size: var(--fs-xxl);
-        align-self: start;
-        padding-left: 1.125rem;
+      font-size: var(--fs-xxl);
+      align-self: start;
+      padding-left: 1.125rem;
     }
 
     @include mq(lg) {
-        padding-left: 6.25rem;
+      padding-left: 6.25rem;
     }
   }
 
@@ -44,12 +44,12 @@
     opacity: 70%;
 
     @include mq(md) {
-        width: 82%;
-        height: 3.2rem;
+      width: 82%;
+      height: 3.2rem;
     }
 
     @include mq(lg) {
-        width: 85%;
+      width: 85%;
     }
   }
 
@@ -58,18 +58,22 @@
     flex-direction: column;
     padding-inline: 4.3rem;
     padding-bottom: 2.9rem;
-
+    transition: color 0.2s ease-in-out, transform 0.3s ease;
+    &:hover {
+      color: var(--color-primary-hover);
+      transform: scale(1.02);
+    }
     @include mq(md) {
-        position: absolute;
-        bottom: 5rem;
-        right: 35vw;
-        padding: 0;
-        align-items: center;
+      position: absolute;
+      bottom: 5rem;
+      right: 35vw;
+      padding: 0;
+      align-items: center;
     }
 
     @include mq(lg) {
-        right: 20vw;
-        bottom: 7.5rem;
+      right: 20vw;
+      bottom: 7.5rem;
     }
 
     :nth-child(1) {
@@ -96,14 +100,14 @@
     font-size: var(--fs-xs);
 
     @include mq(md) {
-        display: flex;
-        justify-content: space-between;
-        padding-inline: 1.7rem;
-        padding-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 1.7rem;
+      padding-bottom: 0.5rem;
     }
 
     @include mq(lg) {
-        padding-inline: 3.125rem;
+      padding-inline: 3.125rem;
     }
   }
 
@@ -116,24 +120,32 @@
 
     a {
       min-height: 1.7rem;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: color 0.3s ease, text-decoration-color 0.3s ease;
+      text-underline-offset: 4px;
+
+      &:hover {
+        color: var(--color-primary-hover);
+        text-decoration-color: var(--color-primary-hover);
+      }
     }
 
     @include mq(md) {
-        padding-bottom: 0;
-        gap: 1rem;
+      padding-bottom: 0;
+      gap: 1rem;
     }
 
     @include mq(lg) {
-        flex-direction: row;
-        gap: 4rem;
+      flex-direction: row;
+      gap: 4rem;
     }
   }
 
   &__copyright {
-
     @include mq(md) {
-        align-self: flex-end;
-        z-index: 20;
+      align-self: flex-end;
+      z-index: 20;
     }
   }
 
@@ -144,16 +156,16 @@
     min-height: 21rem;
 
     @include mq(md) {
-        width: 66vw;
-        height: 18vh;
-        min-height: 10rem;
-        right: 2.5rem;
-        bottom: 0;
+      width: 66vw;
+      height: 18vh;
+      min-height: 10rem;
+      right: 2.5rem;
+      bottom: 0;
     }
 
     @include mq(lg) {
-        width: 45vw;
-        right: 5rem;
+      width: 45vw;
+      right: 5rem;
     }
   }
 }
