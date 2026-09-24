@@ -6,6 +6,7 @@ import '@styles/globals.scss';
 import { HeroSection  } from './sections/HeroSection';
 import { ProjectSection } from './sections/ProjectSection';
 import { AboutSection } from './sections/AboutSection';
+import { ContactSection } from './sections/ContactSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <ProjectSection />
       <AboutSection />
+      <ContactSection />
     </>
   );
 }
