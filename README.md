@@ -1,75 +1,62 @@
-# React + TypeScript + Vite
+# Matilda Söderhäll | Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page portfolio built to showcase my frontend development projects, skills, and background. The site focuses on clean UI/UX, accessibility, and modern CSS architecture without relying on heavy external libraries or routing.
 
-Currently, two official plugins are available:
+[Live Site:](https://matildasoderhall.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Custom CSS Grid Architecture: Utilizes a precise 5-column by 12-row grid system for complex layout handling across mobile, tablet, and desktop viewports.
 
-## Expanding the ESLint configuration
+- Zero-Dependency Navigation: Features a custom-built mobile hamburger menu and sticky header with scroll-based visibility, built purely with React state and SCSS transitions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Smooth Anchor Scrolling: Navigates via semantic section IDs with scroll-behavior: smooth and optimized scroll-margin-top for a seamless single-page user experience.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Accessible Design: Includes properly configured ARIA attributes, semantic HTML5 landmarks (<nav>, <main>, <header>), and screen-reader optimized image text.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- SEO & Open Graph Configured: Fully equipped with custom meta tags and Open Graph images for optimal social sharing.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tech Stack
+<p align="left"> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" /> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="SASS" /> <img src="https://img.shields.io/badge/prettier-%23192a32?style=for-the-badge&logo=prettier&logoColor=dc524a" alt="Prettier" /> <img src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" /> <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" /> <img src="https://img.shields.io/badge/PNPM-F69220?style=flat&logo=pnpm&logoColor=white" alt="PNPM" /> </p>
 
+## 📦 Installation
+To run this project locally, clone the repository and execute the following commands in your terminal:
+
+1. **Install dependencies**
+
+```bash
+  pnpm install 
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Start development server**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+  pnpm run dev
 ```
+
+3. **Bundle the application for production**
+```bash
+  pnpm run build
+```
+
+## 📂 Project Structure
+
+```text
+.
+└── app/
+    ├── [src]/
+    │   ├── [assets] # Images
+    │   ├── [Components] # Smaller UI (ProjectCard, ProfileGraphic, Navigation, Decorations)
+    │   ├── [data] # Json files with project data
+    │   ├── [sections] # Views (Hero, Projects, About, Contact)
+    │   └── [styles] # Design System (Tokens, Typography, Mixins)
+    ├── App.tsx
+    └── main.tsx
+```
+    
+
+
+## ✍️ Authors
+
+[@matildasoderhall](https://github.com/matildasoderhall)
