@@ -1,4 +1,5 @@
 import './ProjectCard.scss';
+import defaultImg from '../assets/images/projects/default.jpg';
 
 interface ProjectCardProps {
   company: string;
@@ -19,7 +20,7 @@ export const ProjectCard = ({
   linkLive,
   mockImg,
 }: ProjectCardProps) => {
-  const placeholderImg = 'src/assets/images/projects/default.jpg';
+  const placeholderImg = defaultImg;
 
   return (
     <article className="project-card">
