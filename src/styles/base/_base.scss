@@ -16,3 +16,7 @@ body {
     overflow: hidden;
   }
 }
+
+body:has(.main-nav__list.is-open) {
+  overflow: hidden;
+}
