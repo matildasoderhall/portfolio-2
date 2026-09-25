@@ -13,7 +13,7 @@ A responsive, single-page portfolio built to showcase my frontend development pr
 
 - Smooth Anchor Scrolling: Navigates via semantic section IDs with scroll-behavior: smooth and optimized scroll-margin-top for a seamless single-page user experience.
 
-- Accessible Design: Includes properly configured ARIA attributes, semantic HTML5 landmarks (<nav>, <main>, <header>), and screen-reader optimized image text.
+- Accessible Design: Includes properly configured ARIA attributes, semantic HTML5 landmarks (`<nav>`, `<main>`, `<header>`), and screen-reader optimized image text.
 
 - SEO & Open Graph Configured: Fully equipped with custom meta tags and Open Graph images for optimal social sharing.
 
@@ -53,8 +53,7 @@ To run this project locally, clone the repository and execute the following comm
     │   └── [styles] # Design System (Tokens, Typography, Mixins)
     ├── App.tsx
     └── main.tsx
-```
-    
+```  
 
 
 ## ✍️ Authors
