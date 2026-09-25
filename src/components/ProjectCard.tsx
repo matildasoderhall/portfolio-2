@@ -29,6 +29,9 @@ export const ProjectCard = ({
           className="project-card__img"
           src={mockImg !== '' ? mockImg : placeholderImg}
           alt={`${company} project mockup`}
+          height={422}
+          width={683}
+          loading="lazy"
         />
       </div>
       <div className="project-card__content">
