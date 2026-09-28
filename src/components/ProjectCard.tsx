@@ -6,9 +6,15 @@ interface ProjectCardProps {
   role: string;
   description: string;
   techStack: string[];
-  linkGithub: string;
-  linkLive: string;
-  mockImg: string;
+  linkGithub?: string;
+  linkLive?: string;
+  projectStatus?: string;
+  mockImg: {
+    height: string;
+    width: string;
+    src: string;
+    backup: string;
+  };
 }
 
 export const ProjectCard = ({
@@ -19,6 +25,7 @@ export const ProjectCard = ({
   linkGithub,
   linkLive,
   mockImg,
+  projectStatus,
 }: ProjectCardProps) => {
   const placeholderImg = defaultImg;
 
@@ -27,10 +34,10 @@ export const ProjectCard = ({
       <div className="project-card__img-container">
         <img
           className="project-card__img"
-          src={mockImg !== '' ? mockImg : placeholderImg}
+          src={mockImg.src !== '' ? mockImg.src : placeholderImg}
           alt={`${company} project mockup`}
-          height={422}
-          width={683}
+          height={mockImg.height}
+          width={mockImg.width}
           loading="lazy"
         />
       </div>
@@ -48,12 +55,22 @@ export const ProjectCard = ({
           ))}
         </ul>
         <div className="project-card__links">
-          <a href={linkGithub} target="_blank" rel="noopener noreferrer">
-            Link to GitHub
-          </a>
-          <a href={linkLive} target="_blank" rel="noopener noreferrer">
-            Link to live project
-          </a>
+          {linkGithub || linkLive ? (
+            <>
+              {linkGithub && (
+                <a href={linkGithub} target="_blank" rel="noopener noreferrer">
+                  Link to GitHub
+                </a>
+              )}
+              {linkLive && (
+                <a href={linkLive} target="_blank" rel="noopener noreferrer">
+                  Live Site
+                </a>
+              )}
+            </>
+          ) : (
+            <p>{projectStatus}</p>
+          )}
         </div>
       </div>
     </article>
