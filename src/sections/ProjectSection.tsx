@@ -1,5 +1,5 @@
 import { ProjectCard } from '../components/ProjectCard';
-import projectsData from '../data/projects.json';
+import { ProjectsData } from '../data/projects';
 import './ProjectSection.scss';
 
 export const ProjectSection = () => {
@@ -7,7 +7,7 @@ export const ProjectSection = () => {
     <div className="project-section" id="projects">
       <h2 className="project-section__title">Selected projects</h2>
       <div className="project-section__content">
-        {projectsData.map((project, index) => (
+        {ProjectsData.map((project, index) => (
           <ProjectCard
             key={index}
             company={project.company}
