@@ -1,15 +1,23 @@
 import './ProfileGraphic.scss';
+import profileImg from '../assets/images/headshot_2026_small-bw.jpg';
 
 interface ProfileGraphicProps {
-    className?: string;
+  className?: string;
 }
 
-export const ProfileGraphic = ({className}:ProfileGraphicProps) => {
-  const img = 'src/assets/images/headshot_2026_small-bw.jpg';
+export const ProfileGraphic = ({ className }: ProfileGraphicProps) => {
+  const img = profileImg;
   return (
     <div className={`profile-graphic ${className || ''}`}>
       <div className="profile-graphic__img-wrapper">
-        <img src={img} alt="" className="profile-graphic__img" />
+        <img
+          src={img}
+          alt="Matilda Söderhäll"
+          className="profile-graphic__img"
+          height={2048}
+          width={1536}
+          loading="lazy"
+        />
         <div className="profile-graphic__overlay" aria-hidden="true" />
       </div>
 

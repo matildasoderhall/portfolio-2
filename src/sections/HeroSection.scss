@@ -73,9 +73,9 @@
     }
 
     @include mq(xlg) {
-    padding-inline: 4vw;
-    margin-right: 0;
-  }
+      padding-inline: 4vw;
+      margin-right: 0;
+    }
   }
 
   &__body {

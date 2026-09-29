@@ -4,9 +4,9 @@ import './ProjectSection.scss';
 
 export const ProjectSection = () => {
   return (
-    <div className="project-section" id='projects'>
+    <div className="project-section" id="projects">
       <h2 className="project-section__title">Selected projects</h2>
-      <div className='project-section__content'>
+      <div className="project-section__content">
         {projectsData.map((project, index) => (
           <ProjectCard
             key={index}
@@ -17,6 +17,7 @@ export const ProjectSection = () => {
             linkGithub={project.linkGithub}
             linkLive={project.linkLive}
             mockImg={project.mockImg}
+            projectStatus={project.projectStatus}
           />
         ))}
       </div>
