@@ -37,10 +37,11 @@ export const HeroSection = () => {
         </h1>
         <p className="hero-section__subtitle">Front End Developer</p>
       </hgroup>
-      <div className='hero-section__body'>
+      <div className="hero-section__body">
         <p className="hero-section__intro">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Curious by nature, detail-oriented by default. I enjoy turning ideas
+          into digital experiences that are thoughtful, intuitive and a little
+          bit unexpected.
         </p>
 
         <p className="hero-section__location">
@@ -49,9 +50,7 @@ export const HeroSection = () => {
         </p>
       </div>
 
-      <DecorativeLines
-        className='hero-section__decor'
-      />
+      <DecorativeLines className="hero-section__decor" />
 
       <div className="hero-section__footer" />
     </section>
