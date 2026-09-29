@@ -116,11 +116,6 @@
       padding-top: 2rem;
     }
 
-    &:has(> :only-child) {
-      justify-content: flex-start;
-      padding-inline: 0.5rem;
-    }
-
     & p {
       font-style: italic;
       padding-top: 0.5rem;
