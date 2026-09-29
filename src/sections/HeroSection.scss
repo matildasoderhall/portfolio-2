@@ -93,7 +93,7 @@
     }
 
     @include mq(lg) {
-      gap: 13rem;
+      gap: 14vh;
       margin-top: 4rem;
     }
     @include mq(xlg) {
@@ -125,7 +125,6 @@
       top: auto;
       left: auto;
       transform: translate(0);
-      padding: auto;
     }
   }
 
@@ -160,8 +159,8 @@
     }
 
     @include mq(lg) {
-      height: 47vh;
-      width: 65vw;
+      height: 40vh;
+      width: 62vw;
       right: 0;
       margin-bottom: 3.5rem;
       margin-right: 2.5rem;
