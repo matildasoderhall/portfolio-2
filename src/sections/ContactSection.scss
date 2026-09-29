@@ -58,7 +58,9 @@
     flex-direction: column;
     padding-inline: 4.3rem;
     padding-bottom: 2.9rem;
-    transition: color 0.2s ease-in-out, transform 0.3s ease;
+    transition:
+      color 0.2s ease-in-out,
+      transform 0.3s ease;
     &:hover {
       color: var(--color-primary-hover);
       transform: scale(1.02);
@@ -122,7 +124,9 @@
       min-height: 1.7rem;
       text-decoration: underline;
       text-decoration-color: transparent;
-      transition: color 0.3s ease, text-decoration-color 0.3s ease;
+      transition:
+        color 0.3s ease,
+        text-decoration-color 0.3s ease;
       text-underline-offset: 4px;
 
       &:hover {
