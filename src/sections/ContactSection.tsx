@@ -5,7 +5,7 @@ export const ContactSection = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="contact-section" id='contact'>
+    <footer className="contact-section" id="contact">
       <div className="contact-section__header">
         <h2 className="contact-section__title">Get in touch!</h2>
         <div className="contact-section__decorative-box" />

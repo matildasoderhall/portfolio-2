@@ -9,7 +9,7 @@ $maxContentWidth: 90rem; // 1440px
 
 :root {
   --grid-gap: 1rem;
-  
+
   @media (min-width: $breakpoint-md) {
     --grid-gap: 2rem;
   }

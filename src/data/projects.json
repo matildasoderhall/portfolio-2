@@ -13,7 +13,12 @@
     ],
     "linkGithub": "https://github.com/matildasoderhall/rumfordramatik",
     "linkLive": "https://rumfordramatik.se/",
-    "mockImg": ""
+    "mockImg": {
+      "height": "816",
+      "width": "1312",
+      "src": "src/assets/images/projects/rumfordramatik_mock.avif",
+      "backup": "src/assets/images/projects/rumfordramatik_mock.png"
+    }
   },
   {
     "company": "Karlatornet Observation AB",
@@ -26,37 +31,38 @@
       "Tailwind CSS",
       "WCAG 2.1 AA"
     ],
-    "linkGithub": "",
-    "linkLive": "",
-    "mockImg": ""
+    "projectStatus": "In Development - (Client Pause)",
+    "mockImg": {
+      "height": "1600",
+      "width": "2642",
+      "src": "src/assets/images/projects/karlatornet_mock.avif",
+      "backup": "src/assets/images/projects/karlatornet_mock.png"
+    }
   },
   {
     "company": "GMBL-Insight",
     "role": "Frontend Developer",
     "description": "A marketing and information website for GMBL-Insight, built with React, Vite, and TypeScript. Set up the project architecture from scratch and generated the site's watercolor illustrations using AI image tools. Delivered within three weeks alongside two classmates, adapting to incomplete UX deliverables after the UX interns departed mid-project.",
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Vite",
-      "SCSS",
-      "WCAG 2.1 AA"
-    ],
-    "linkGithub": "",
-    "linkLive": "",
-    "mockImg": ""
+    "techStack": ["TypeScript", "React", "Vite", "SCSS", "WCAG 2.1 AA"],
+    "linkLive": "https://www.gmblinsight.se/",
+    "mockImg": {
+      "height": "896",
+      "width": "1195",
+      "src": "src/assets/images/projects/gmbl-insight_mock.avif",
+      "backup": "src/assets/images/projects/gmbl-insight_mock.png"
+    }
   },
   {
     "company": "Spelinsikt",
     "role": "Frontend Developer",
     "description": "A gambling addiction support app rebuilt from the ground up, taking ownership of architecture, design system, and documentation in a real client environment.",
-    "techStack": [
-      "TypeScript",
-      "React Native",
-      "Expo",
-      "Expo Router"
-    ],
-    "linkGithub": "",
-    "linkLive": "",
-    "mockImg": ""
+    "techStack": ["TypeScript", "React Native", "Expo", "Expo Router"],
+    "linkLive": "https://spelinsikt.se/",
+    "mockImg": {
+      "height": "896",
+      "width": "1195",
+      "src": "src/assets/images/projects/spelinsikt_mock.avif",
+      "backup": "src/assets/images/projects/spelinsikt_mock.png"
+    }
   }
 ]

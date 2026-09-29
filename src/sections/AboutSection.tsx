@@ -48,7 +48,7 @@ export const AboutSection = () => {
           </ul>
         </div>
       </div>
-      <ProfileGraphic className="about-section__profile-graphic"/>
+      <ProfileGraphic className="about-section__profile-graphic" />
     </section>
   );
 };
