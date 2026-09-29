@@ -1,4 +1,3 @@
-
 $font-sans: 'Manrope', sans-serif;
 
 $weight-extralight: 200;
@@ -16,28 +15,28 @@ $weight-medium: 500;
   --fw-medium: #{$weight-medium};
 
   // Mobile Font Sizes (Default)
-  --fs-xs: 1rem;       // 16px
-  --fs-sm: 1.125rem;   // 18px
-  --fs-base: 1.25rem;  // 20px
-  --fs-lg: 2rem;       // 32px
-  --fs-xl: 2.375rem;   // 38px
-  --fs-xxl: 3.25rem;   // 52px
+  --fs-xs: 1rem; // 16px
+  --fs-sm: 1.125rem; // 18px
+  --fs-base: 1.25rem; // 20px
+  --fs-lg: 2rem; // 32px
+  --fs-xl: 2.375rem; // 38px
+  --fs-xxl: 3.25rem; // 52px
 
   // Tablet Font Sizes (Media Query)
   @media (min-width: 48rem) {
     --fs-xs: 1rem;
-    --fs-base: 1.25rem;  // 20px (Stays the same)
-    --fs-md: 1.5rem;     // 24px
-    --fs-lg: 2rem;       // 32px (Stays the same)
-    --fs-xxl: 3.75rem;   // 60px
+    --fs-base: 1.25rem; // 20px (Stays the same)
+    --fs-md: 1.5rem; // 24px
+    --fs-lg: 2rem; // 32px (Stays the same)
+    --fs-xxl: 3.75rem; // 60px
   }
 
   // Desktop Font Sizes (Media Query)
   @media (min-width: 80rem) {
     --fs-xs: 1rem;
-    --fs-base: 1.25rem;  // 20px (Stays the same)
-    --fs-lg: 2rem;       // 32px (Stays the same)
-    --fs-xxl: 5rem;      // 80px
+    --fs-base: 1.25rem; // 20px (Stays the same)
+    --fs-lg: 2rem; // 32px (Stays the same)
+    --fs-xxl: 5rem; // 80px
   }
 }
 

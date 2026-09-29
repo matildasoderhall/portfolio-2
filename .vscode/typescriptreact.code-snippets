@@ -1,26 +1,20 @@
 {
   "Console Log": {
     "prefix": "cl",
-    "body": [
-      "console.log($1);"
-    ],
-    "description": "Log output to console"
+    "body": ["console.log($1);"],
+    "description": "Log output to console",
   },
 
   "Console Log Variable": {
     "prefix": "clv",
-    "body": [
-      "console.log('$1:', $1);"
-    ],
-    "description": "Log variable with label"
+    "body": ["console.log('$1:', $1);"],
+    "description": "Log variable with label",
   },
 
   "Console Error": {
     "prefix": "cerr",
-    "body": [
-      "console.error('$1:', $1);"
-    ],
-    "description": "Log error to console"
+    "body": ["console.error('$1:', $1);"],
+    "description": "Log error to console",
   },
 
   "React Component": {
@@ -32,9 +26,9 @@
       "      $3",
       "    </>",
       "  );",
-      "};"
+      "};",
     ],
-    "description": "React Component base with filename as component name"
+    "description": "React Component base with filename as component name",
   },
 
   "React Component with Props": {
@@ -50,9 +44,9 @@
       "      $4",
       "    </$3>",
       "  );",
-      "};"
+      "};",
     ],
-    "description": "React Component with Props interface"
+    "description": "React Component with Props interface",
   },
 
   "React Component with Props and SCSS": {
@@ -70,43 +64,33 @@
       "      $3",
       "    </div>",
       "  );",
-      "};"
+      "};",
     ],
-    "description": "React Component with Props and Global SCSS import"
+    "description": "React Component with Props and Global SCSS import",
   },
 
   "useState": {
     "prefix": "ust",
-    "body": [
-      "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState$2($3);"
-    ],
-    "description": "useState hook"
+    "body": ["const [$1, set${1/(.*)/${1:/capitalize}/}] = useState$2($3);"],
+    "description": "useState hook",
   },
 
   "useRef": {
     "prefix": "uref",
-    "body": [
-      "const $1Ref = useRef$2(null);"
-    ],
-    "description": "useRef hook"
+    "body": ["const $1Ref = useRef$2(null);"],
+    "description": "useRef hook",
   },
 
   "useContext": {
     "prefix": "uctx",
-    "body": [
-      "const $1 = useContext(${2:Context});"
-    ],
-    "description": "useContext hook"
+    "body": ["const $1 = useContext(${2:Context});"],
+    "description": "useContext hook",
   },
 
   "Async Function": {
     "prefix": "afn",
-    "body": [
-      "const $1 = async ($2) => {",
-      "  $3",
-      "};"
-    ],
-    "description": "Async arrow function"
+    "body": ["const $1 = async ($2) => {", "  $3", "};"],
+    "description": "Async arrow function",
   },
 
   "Try Catch": {
@@ -117,9 +101,9 @@
       "} catch (error) {",
       "  console.error('${2:Error}:', error);",
       "  $3",
-      "}"
+      "}",
     ],
-    "description": "Try catch block"
+    "description": "Try catch block",
   },
 
   "Try Catch Finally": {
@@ -132,22 +116,15 @@
       "  $3",
       "} finally {",
       "  $4",
-      "}"
+      "}",
     ],
-    "description": "Try catch finally block"
+    "description": "Try catch finally block",
   },
 
   "If Else": {
     "prefix": "ifel",
-    "body": [
-      "if ($1) {",
-      "  $2",
-      "}",
-      "else {",
-      "  $3",
-      "}"
-    ],
-    "description": "If Else if"
+    "body": ["if ($1) {", "  $2", "}", "else {", "  $3", "}"],
+    "description": "If Else if",
   },
 
   "Else IF": {
@@ -161,9 +138,9 @@
       "}",
       "else {",
       "  $5",
-      "}"
+      "}",
     ],
-    "description": "If Else base"
+    "description": "If Else base",
   },
 
   "JSX Map": {
@@ -173,50 +150,38 @@
       "  <$3 key={$2.$4}>",
       "    $5",
       "  </$3>",
-      "))}"
+      "))}",
     ],
-    "description": "JSX map with key"
+    "description": "JSX map with key",
   },
 
   "Filter": {
     "prefix": "filter",
-    "body": [
-      "$1.filter(($2) => $3)"
-    ],
-    "description": "Array filter"
+    "body": ["$1.filter(($2) => $3)"],
+    "description": "Array filter",
   },
 
   "Find": {
     "prefix": "find",
-    "body": [
-      "$1.find(($2) => $3)"
-    ],
-    "description": "Array find"
+    "body": ["$1.find(($2) => $3)"],
+    "description": "Array find",
   },
 
   "Reduce": {
     "prefix": "reduce",
-    "body": [
-      "$1.reduce((acc, $2) => {",
-      "  return $3;",
-      "}, $4)"
-    ],
-    "description": "Array reduce"
+    "body": ["$1.reduce((acc, $2) => {", "  return $3;", "}, $4)"],
+    "description": "Array reduce",
   },
 
   "Import": {
     "prefix": "imp",
-    "body": [
-      "import { $2 } from '$1';"
-    ],
-    "description": "ES6 import"
+    "body": ["import { $2 } from '$1';"],
+    "description": "ES6 import",
   },
 
   "Import Default": {
     "prefix": "impd",
-    "body": [
-      "import $2 from '$1';"
-    ],
-    "description": "ES6 import default"
+    "body": ["import $2 from '$1';"],
+    "description": "ES6 import default",
   },
 }
