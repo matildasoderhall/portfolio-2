@@ -52,7 +52,7 @@ export const ProjectsData = [
   {
     company: "GMBL-Insight",
     role: "Frontend Developer",
-    description: "A marketing and information website for GMBL-Insight, built with React, Vite, and TypeScript. Set up the project architecture from scratch and generated the site's watercolor illustrations using AI image tools. Delivered within three weeks alongside two classmates, adapting to incomplete UX deliverables after the UX interns departed mid-project.",
+    description: "A marketing and information website for GMBL-Insight, built with React, Vite, and TypeScript. Set up the project architecture from scratch. Delivered within three weeks alongside two classmates, adapting to incomplete UX deliverables after the UX interns departed mid-project.",
     techStack: ["TypeScript", "React", "Vite", "SCSS", "WCAG 2.1 AA"],
     linkLive: "https://www.gmblinsight.se/",
     mockImg: {
